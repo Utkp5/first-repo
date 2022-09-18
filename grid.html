@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+      * {
+        margin: 0;
+        font-family: 'Mulish', sans-serif;
+      }
+      #h3 {
+        text-align: center;
+        font-size: x-large;
+      }
+      #input_text {
+        height: 40px;
+        width: 276px;
+        text-align: end;
+        font-size: xx-large;
+        font-weight: 600;
+        background: chartreuse;
+      }
+      .main {
+        position: absolute;
+        top: 85.5px;
+        left: 539px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid red;
+      }
+      .container {
+        background-color: darkslategray;
+        height: 400px;
+        width: 280px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        padding: 10px 0px;
+        border: 2px solid black;
+        /* border-radius: 10px; */
+      }
+      .item {
+        background-color: lavender;
+        height: 50px;
+        width: 50px;
+        border: 2px solid floralwhite;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .item20 {
+        background-color: orangered;
+        color: white;
+      }
+      .item_color {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="h3">Calculator By pandit Utkarsh...</h3>
+    <div class="main">
+      <input type="text" id="input_text" />
+      <div class="container">
+        <div class="item item_color">C</div>
+        <div class="item item_color">X</div>
+        <div class="item item_color">%</div>
+        <div class="item item_color">/</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item item_color">x</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item item_color">-</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item_color">+</div>
+        <div class="item item_color">~</div>
+        <div class="item">0</div>
+        <div class="item">.</div>
+        <div class="item item20">=</div>
+      </div>
+    </div>
+  </body>
+</html>
